@@ -7,6 +7,7 @@ import DBConnection.DatabaseConnection;
 import Model.ModelUser;
 import component.Animation2;
 import java.awt.Color;
+import java.awt.print.PrinterException;
 import java.sql.*;
 import javax.swing.*;
 import java.sql.Connection;
@@ -61,6 +62,9 @@ public class BookingDetail extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         bookingdata = new javax.swing.JTable();
         search = new javax.swing.JTextField();
+        printbill = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        billtextarea = new javax.swing.JTextArea();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -296,45 +300,71 @@ public class BookingDetail extends javax.swing.JFrame {
             }
         });
 
+        printbill.setBackground(new java.awt.Color(0, 102, 102));
+        printbill.setForeground(new java.awt.Color(255, 255, 255));
+        printbill.setText("Print Bill");
+        printbill.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.white, null, null));
+        printbill.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                printbillActionPerformed(evt);
+            }
+        });
+
+        billtextarea.setColumns(20);
+        billtextarea.setRows(5);
+        jScrollPane2.setViewportView(billtextarea);
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(198, 198, 198)
-                .addComponent(view)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(clear)
-                .addGap(233, 233, 233))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18)
+                        .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(112, 112, 112)
+                                .addComponent(view)
+                                .addGap(152, 152, 152)
+                                .addComponent(clear))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)))
+                .addGap(12, 12, 12))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(32, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 688, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(printbill)
+                .addGap(94, 94, 94))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(82, 82, 82)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
+                        .addGap(41, 41, 41)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(199, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(clear)
-                            .addComponent(view))
-                        .addGap(124, 124, 124))))
+                            .addComponent(view)
+                            .addComponent(clear))
+                        .addGap(147, 147, 147))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(printbill)
+                        .addGap(72, 72, 72))))
         );
 
         javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
@@ -344,11 +374,12 @@ public class BookingDetail extends javax.swing.JFrame {
             .addGroup(panel1Layout.createSequentialGroup()
                 .addComponent(panelClass2, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
         panel1Layout.setVerticalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelClass2, javax.swing.GroupLayout.DEFAULT_SIZE, 590, Short.MAX_VALUE)
+            .addComponent(panelClass2, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -493,6 +524,53 @@ public class BookingDetail extends javax.swing.JFrame {
         cs.setVisible(true);
         dispose();
     }//GEN-LAST:event_labelfood2MouseClicked
+
+    private void printbillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printbillActionPerformed
+        // TODO add your handling code here:
+        int selectedRow = bookingdata.getSelectedRow();
+
+        if (selectedRow == -1) {
+            JOptionPane.showMessageDialog(this, "Please select a booking to print the bill.");
+            return;
+    }
+
+        // Get data from the selected row
+        DefaultTableModel model = (DefaultTableModel) bookingdata.getModel();
+        String username = model.getValueAt(selectedRow, 0).toString(); // Assuming Email is column 0
+        String movieTitle = model.getValueAt(selectedRow, 1).toString(); // Movie title
+        String bookingDate = model.getValueAt(selectedRow, 2).toString(); // Booking Date
+        String bookingTime = model.getValueAt(selectedRow, 3).toString(); // Booking Time
+        String standardTickets = model.getValueAt(selectedRow, 4).toString(); // Standard Tickets
+        String premiumTickets = model.getValueAt(selectedRow, 5).toString(); // Premium Tickets
+        String totalCost = model.getValueAt(selectedRow, 6).toString(); // Total Cost
+
+        // Generate the bill in a text area
+        
+        billtextarea.setText("******************************************************\n");
+        billtextarea.setText(billtextarea.getText() + "                   CINEMA BILL                         \n");
+        billtextarea.setText(billtextarea.getText() + "******************************************************\n");
+        billtextarea.setText(billtextarea.getText() + "Customer Email: " + username + "\n");
+        billtextarea.setText(billtextarea.getText() + "Movie Title: " + movieTitle + "\n");
+        billtextarea.setText(billtextarea.getText() + "Booking Date: " + bookingDate + "\n");
+        billtextarea.setText(billtextarea.getText() + "Booking Time: " + bookingTime + "\n");
+        billtextarea.setText(billtextarea.getText() + "Standard Tickets: " + standardTickets + "\n");
+        billtextarea.setText(billtextarea.getText() + "Premium Tickets: " + premiumTickets + "\n");
+        billtextarea.setText(billtextarea.getText() + "Total Cost: $" + totalCost + "\n");
+        billtextarea.setText(billtextarea.getText() + "******************************************************\n");
+        billtextarea.setText(billtextarea.getText() + "           THANK YOU! ENJOY YOUR MOVIE                \n");
+
+        // Print the bill
+        try {
+            boolean isPrinted = billtextarea.print();
+            if (isPrinted) {
+                JOptionPane.showMessageDialog(this, "Bill printed successfully!");
+            } else {
+                JOptionPane.showMessageDialog(this, "Bill printing was cancelled.");
+            }
+        } catch (PrinterException e) {
+            JOptionPane.showMessageDialog(this, "Error during printing: " + e.getMessage());
+        }
+    }//GEN-LAST:event_printbillActionPerformed
     
     
               
@@ -555,12 +633,14 @@ public void search(String str) {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextArea billtextarea;
     private javax.swing.JTable bookingdata;
     private javax.swing.JButton clear;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     public static javax.swing.JLabel labelbook2;
     public static javax.swing.JLabel labeldetail2;
     public static javax.swing.JLabel labelfood2;
@@ -573,6 +653,7 @@ public void search(String str) {
     public static component.PanelGradient paneldetail2;
     public static component.PanelGradient panelfood2;
     public static component.PanelGradient panelhome2;
+    private javax.swing.JButton printbill;
     private javax.swing.JTextField search;
     private javax.swing.JButton view;
     // End of variables declaration//GEN-END:variables
