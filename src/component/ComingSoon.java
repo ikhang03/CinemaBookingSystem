@@ -46,14 +46,14 @@ public class ComingSoon extends javax.swing.JFrame {
         panelClass2 = new component.PanelClass();
         labelwelcome1 = new javax.swing.JLabel();
         labelwelcome = new javax.swing.JLabel();
-        paneldetail2 = new component.PanelGradient();
-        labeldetail2 = new javax.swing.JLabel();
-        panelbook2 = new component.PanelGradient();
-        labelbook2 = new javax.swing.JLabel();
-        panelfood2 = new component.PanelGradient();
-        labelfood2 = new javax.swing.JLabel();
-        panelhome2 = new component.PanelGradient();
-        labelhome2 = new javax.swing.JLabel();
+        paneldetail3 = new component.PanelGradient();
+        labeldetail3 = new javax.swing.JLabel();
+        panelbook3 = new component.PanelGradient();
+        labelbook3 = new javax.swing.JLabel();
+        panelfood3 = new component.PanelGradient();
+        labelfood3 = new javax.swing.JLabel();
+        panelhome3 = new component.PanelGradient();
+        labelhome3 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -95,118 +95,118 @@ public class ComingSoon extends javax.swing.JFrame {
         labelwelcome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelwelcome.setText("Welcome To ");
 
-        paneldetail2.setBackground(new java.awt.Color(23, 27, 36));
-        paneldetail2.setToolTipText("");
-        paneldetail2.setAlignmentX(0.0F);
-        paneldetail2.setAlignmentY(0.0F);
-        paneldetail2.setColorGradient(new java.awt.Color(23, 27, 36));
-        paneldetail2.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
-        paneldetail2.setMinimumSize(new java.awt.Dimension(180, 40));
-        paneldetail2.addMouseListener(new java.awt.event.MouseAdapter() {
+        paneldetail3.setBackground(new java.awt.Color(23, 27, 36));
+        paneldetail3.setToolTipText("");
+        paneldetail3.setAlignmentX(0.0F);
+        paneldetail3.setAlignmentY(0.0F);
+        paneldetail3.setColorGradient(new java.awt.Color(23, 27, 36));
+        paneldetail3.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
+        paneldetail3.setMinimumSize(new java.awt.Dimension(180, 40));
+        paneldetail3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                paneldetail2MousePressed(evt);
+                paneldetail3MousePressed(evt);
             }
         });
-        paneldetail2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        paneldetail3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        labeldetail2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        labeldetail2.setForeground(new java.awt.Color(166, 166, 166));
-        labeldetail2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labeldetail2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/detail.png"))); // NOI18N
-        labeldetail2.setText("Booking Detail");
-        labeldetail2.addMouseListener(new java.awt.event.MouseAdapter() {
+        labeldetail3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        labeldetail3.setForeground(new java.awt.Color(166, 166, 166));
+        labeldetail3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labeldetail3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/detail.png"))); // NOI18N
+        labeldetail3.setText("Booking Detail");
+        labeldetail3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labeldetail2MouseClicked(evt);
+                labeldetail3MouseClicked(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                labeldetail2MousePressed(evt);
+                labeldetail3MousePressed(evt);
             }
         });
-        paneldetail2.add(labeldetail2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 40));
+        paneldetail3.add(labeldetail3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 40));
 
-        panelbook2.setBackground(new java.awt.Color(23, 27, 36));
-        panelbook2.setToolTipText("");
-        panelbook2.setAlignmentX(0.0F);
-        panelbook2.setAlignmentY(0.0F);
-        panelbook2.setColorGradient(new java.awt.Color(23, 27, 36));
-        panelbook2.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
-        panelbook2.setMinimumSize(new java.awt.Dimension(180, 40));
-        panelbook2.addMouseListener(new java.awt.event.MouseAdapter() {
+        panelbook3.setBackground(new java.awt.Color(23, 27, 36));
+        panelbook3.setToolTipText("");
+        panelbook3.setAlignmentX(0.0F);
+        panelbook3.setAlignmentY(0.0F);
+        panelbook3.setColorGradient(new java.awt.Color(23, 27, 36));
+        panelbook3.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
+        panelbook3.setMinimumSize(new java.awt.Dimension(180, 40));
+        panelbook3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                panelbook2MousePressed(evt);
+                panelbook3MousePressed(evt);
             }
         });
-        panelbook2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelbook3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        labelbook2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        labelbook2.setForeground(new java.awt.Color(166, 166, 166));
-        labelbook2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelbook2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/books.png"))); // NOI18N
-        labelbook2.setText("Book");
-        labelbook2.addMouseListener(new java.awt.event.MouseAdapter() {
+        labelbook3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        labelbook3.setForeground(new java.awt.Color(166, 166, 166));
+        labelbook3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelbook3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/books.png"))); // NOI18N
+        labelbook3.setText("Book");
+        labelbook3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelbook2MouseClicked(evt);
+                labelbook3MouseClicked(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                labelbook2MousePressed(evt);
+                labelbook3MousePressed(evt);
             }
         });
-        panelbook2.add(labelbook2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 190, 40));
+        panelbook3.add(labelbook3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 40));
 
-        panelfood2.setBackground(new java.awt.Color(23, 27, 36));
-        panelfood2.setToolTipText("");
-        panelfood2.setAlignmentX(0.0F);
-        panelfood2.setAlignmentY(0.0F);
-        panelfood2.setColorGradient(new java.awt.Color(23, 27, 36));
-        panelfood2.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
-        panelfood2.setMinimumSize(new java.awt.Dimension(180, 40));
-        panelfood2.addMouseListener(new java.awt.event.MouseAdapter() {
+        panelfood3.setBackground(new java.awt.Color(23, 27, 36));
+        panelfood3.setToolTipText("");
+        panelfood3.setAlignmentX(0.0F);
+        panelfood3.setAlignmentY(0.0F);
+        panelfood3.setColorGradient(new java.awt.Color(23, 27, 36));
+        panelfood3.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
+        panelfood3.setMinimumSize(new java.awt.Dimension(180, 40));
+        panelfood3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                panelfood2MousePressed(evt);
+                panelfood3MousePressed(evt);
             }
         });
-        panelfood2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelfood3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        labelfood2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        labelfood2.setForeground(new java.awt.Color(166, 166, 166));
-        labelfood2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelfood2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/comingsoon.png"))); // NOI18N
-        labelfood2.setText("Coming Soon");
-        labelfood2.addMouseListener(new java.awt.event.MouseAdapter() {
+        labelfood3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        labelfood3.setForeground(new java.awt.Color(166, 166, 166));
+        labelfood3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelfood3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/comingsoon.png"))); // NOI18N
+        labelfood3.setText("Coming Soon");
+        labelfood3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                labelfood2MousePressed(evt);
+                labelfood3MousePressed(evt);
             }
         });
-        panelfood2.add(labelfood2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 40));
+        panelfood3.add(labelfood3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 40));
 
-        panelhome2.setBackground(new java.awt.Color(23, 27, 36));
-        panelhome2.setToolTipText("");
-        panelhome2.setAlignmentX(0.0F);
-        panelhome2.setAlignmentY(0.0F);
-        panelhome2.setColorGradient(new java.awt.Color(23, 27, 36));
-        panelhome2.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
-        panelhome2.setMinimumSize(new java.awt.Dimension(180, 40));
-        panelhome2.addMouseListener(new java.awt.event.MouseAdapter() {
+        panelhome3.setBackground(new java.awt.Color(23, 27, 36));
+        panelhome3.setToolTipText("");
+        panelhome3.setAlignmentX(0.0F);
+        panelhome3.setAlignmentY(0.0F);
+        panelhome3.setColorGradient(new java.awt.Color(23, 27, 36));
+        panelhome3.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
+        panelhome3.setMinimumSize(new java.awt.Dimension(180, 40));
+        panelhome3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                panelhome2MousePressed(evt);
+                panelhome3MousePressed(evt);
             }
         });
-        panelhome2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelhome3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        labelhome2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        labelhome2.setForeground(new java.awt.Color(166, 166, 166));
-        labelhome2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelhome2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/home.png"))); // NOI18N
-        labelhome2.setText("Home");
-        labelhome2.addMouseListener(new java.awt.event.MouseAdapter() {
+        labelhome3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        labelhome3.setForeground(new java.awt.Color(166, 166, 166));
+        labelhome3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelhome3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/home.png"))); // NOI18N
+        labelhome3.setText("Home");
+        labelhome3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelhome2MouseClicked(evt);
+                labelhome3MouseClicked(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                labelhome2MousePressed(evt);
+                labelhome3MousePressed(evt);
             }
         });
-        panelhome2.add(labelhome2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 40));
+        panelhome3.add(labelhome3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 40));
 
         javax.swing.GroupLayout panelClass2Layout = new javax.swing.GroupLayout(panelClass2);
         panelClass2.setLayout(panelClass2Layout);
@@ -219,16 +219,16 @@ public class ComingSoon extends javax.swing.JFrame {
                         .addComponent(labelwelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelClass2Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(panelhome2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(panelhome3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelClass2Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(panelbook2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(panelbook3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelClass2Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(panelfood2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(panelfood3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelClass2Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(paneldetail2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(paneldetail3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(34, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelClass2Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -243,13 +243,13 @@ public class ComingSoon extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addComponent(labelwelcome1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
-                .addComponent(panelhome2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelhome3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(panelbook2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelbook3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(panelfood2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelfood3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(paneldetail2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(paneldetail3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanel2.setBackground(new java.awt.Color(40, 62, 81));
@@ -395,70 +395,70 @@ public class ComingSoon extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void labelhome2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelhome2MousePressed
+    private void labelhome3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelhome3MousePressed
         // TODO add your handling code here:
         ColorOP.AnimateHome3();
-    }//GEN-LAST:event_labelhome2MousePressed
+    }//GEN-LAST:event_labelhome3MousePressed
 
-    private void panelhome2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelhome2MousePressed
+    private void panelhome3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelhome3MousePressed
         // TODO add your handling code here:
         ColorOP.AnimateHome3();
-    }//GEN-LAST:event_panelhome2MousePressed
+    }//GEN-LAST:event_panelhome3MousePressed
 
-    private void labelbook2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelbook2MousePressed
+    private void labelbook3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelbook3MousePressed
         // TODO add your handling code here:
         ColorOP.AnimateBook3();
-    }//GEN-LAST:event_labelbook2MousePressed
+    }//GEN-LAST:event_labelbook3MousePressed
 
-    private void panelbook2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelbook2MousePressed
+    private void panelbook3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelbook3MousePressed
         // TODO add your handling code here:
         ColorOP.AnimateBook3();
-    }//GEN-LAST:event_panelbook2MousePressed
+    }//GEN-LAST:event_panelbook3MousePressed
 
-    private void labelfood2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelfood2MousePressed
+    private void labelfood3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelfood3MousePressed
         // TODO add your handling code here:
         ColorOP.AnimateFood3();
-    }//GEN-LAST:event_labelfood2MousePressed
+    }//GEN-LAST:event_labelfood3MousePressed
 
-    private void panelfood2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelfood2MousePressed
+    private void panelfood3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelfood3MousePressed
         // TODO add your handling code here:
         ColorOP.AnimateFood3();
-    }//GEN-LAST:event_panelfood2MousePressed
+    }//GEN-LAST:event_panelfood3MousePressed
 
-    private void labeldetail2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labeldetail2MousePressed
+    private void labeldetail3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labeldetail3MousePressed
         // TODO add your handling code here:
         ColorOP.AnimateDetail3();
-    }//GEN-LAST:event_labeldetail2MousePressed
+    }//GEN-LAST:event_labeldetail3MousePressed
 
-    private void paneldetail2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paneldetail2MousePressed
+    private void paneldetail3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paneldetail3MousePressed
         // TODO add your handling code here:
         ColorOP.AnimateDetail3();
-    }//GEN-LAST:event_paneldetail2MousePressed
+    }//GEN-LAST:event_paneldetail3MousePressed
 
-    private void labelhome2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelhome2MouseClicked
+    private void labelhome3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelhome3MouseClicked
         // TODO add your handling code here:
         ModelUser user = new ModelUser();
         DashBoard df = new DashBoard(user);
         df.setLocation(this.getLocation());
         df.setVisible(true);
         dispose();
-    }//GEN-LAST:event_labelhome2MouseClicked
+    }//GEN-LAST:event_labelhome3MouseClicked
 
-    private void labelbook2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelbook2MouseClicked
+    private void labelbook3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelbook3MouseClicked
         // TODO add your handling code here:
         BookForm bf = new  BookForm();
         bf.setLocation(this.getLocation());
         bf.setVisible(true);
         dispose();
-    }//GEN-LAST:event_labelbook2MouseClicked
+    }//GEN-LAST:event_labelbook3MouseClicked
 
-    private void labeldetail2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labeldetail2MouseClicked
+    private void labeldetail3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labeldetail3MouseClicked
         // TODO add your handling code here:
         BookingDetail bd = new  BookingDetail();
         bd.setLocation(this.getLocation());
         bd.setVisible(true);
         dispose();
-    }//GEN-LAST:event_labeldetail2MouseClicked
+    }//GEN-LAST:event_labeldetail3MouseClicked
     
     
 
@@ -521,17 +521,17 @@ public class ComingSoon extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    public static javax.swing.JLabel labelbook2;
-    public static javax.swing.JLabel labeldetail2;
-    public static javax.swing.JLabel labelfood2;
-    public static javax.swing.JLabel labelhome2;
+    public static javax.swing.JLabel labelbook3;
+    public static javax.swing.JLabel labeldetail3;
+    public static javax.swing.JLabel labelfood3;
+    public static javax.swing.JLabel labelhome3;
     private javax.swing.JLabel labelwelcome;
     private javax.swing.JLabel labelwelcome1;
     private swing.Panel panel1;
     private component.PanelClass panelClass2;
-    public static component.PanelGradient panelbook2;
-    public static component.PanelGradient paneldetail2;
-    public static component.PanelGradient panelfood2;
-    public static component.PanelGradient panelhome2;
+    public static component.PanelGradient panelbook3;
+    public static component.PanelGradient paneldetail3;
+    public static component.PanelGradient panelfood3;
+    public static component.PanelGradient panelhome3;
     // End of variables declaration//GEN-END:variables
 }

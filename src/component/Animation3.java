@@ -8,14 +8,14 @@ import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import static component.DashBoard.labelhome;
-import static component.DashBoard.panelhome;
-import static component.DashBoard.labelbook;
-import static component.DashBoard.panelbook;
-import static component.DashBoard.labelfood;
-import static component.DashBoard.panelfood;
-import static component.DashBoard.labeldetail;
-import static component.DashBoard.paneldetail;
+import static component.ComingSoon.labelhome3;
+import static component.ComingSoon.panelhome3;
+import static component.ComingSoon.labelbook3;
+import static component.ComingSoon.panelbook3;
+import static component.ComingSoon.labelfood3;
+import static component.ComingSoon.panelfood3;
+import static component.ComingSoon.labeldetail3;
+import static component.ComingSoon.paneldetail3;
 
 /**
  *
@@ -40,32 +40,31 @@ public class Animation3 {
     }
 
     public void AnimateHome3(){
-        mostrarColor(panelhome, panelhome, labelhome, "/Icon/homeo.png");
-        establecColor( panelbook,  panelbook, labelbook, "/Icon/books.png");
-        establecColor( panelfood,  panelfood, labelfood, "/Icon/comingsoon.png");
-        establecColor(paneldetail, paneldetail, labeldetail, "/Icon/detail.png");
+        mostrarColor(panelhome3, panelhome3, labelhome3, "/Icon/homeo.png");
+        establecColor( panelbook3,  panelbook3, labelbook3, "/Icon/books.png");
+        establecColor( panelfood3,  panelfood3, labelfood3, "/Icon/comingsoon.png");
+        establecColor(paneldetail3, paneldetail3, labeldetail3, "/Icon/detail.png");
     }
 
     public void AnimateBook3(){
-        mostrarColor( panelbook,  panelbook, labelbook, "/Icon/booko.png");
-        establecColor(panelhome, panelhome, labelhome, "/Icon/home.png");
-        establecColor(panelfood, panelfood, labelfood, "/Icon/comingsoon.png");
-        establecColor(paneldetail, paneldetail, labeldetail, "/Icon/detail.png");
+        mostrarColor( panelbook3,  panelbook3, labelbook3, "/Icon/booko.png");
+        establecColor(panelhome3, panelhome3, labelhome3, "/Icon/home.png");
+        establecColor(panelfood3, panelfood3, labelfood3, "/Icon/comingsoon.png");
+        establecColor(paneldetail3, paneldetail3, labeldetail3, "/Icon/detail.png");
     }
 
     public void AnimateFood3(){
-        mostrarColor(panelfood, panelfood, labelfood, "/Icon/comingsoono.png");
-        establecColor(panelhome, panelhome, labelhome, "/Icon/home.png");
-        establecColor( panelbook, panelbook, labelbook, "/Icon/books.png");
-        establecColor(paneldetail, paneldetail, labeldetail, "/Icon/detail.png");
+        mostrarColor(panelfood3, panelfood3, labelfood3, "/Icon/comingsoono.png");
+        establecColor(panelhome3, panelhome3, labelhome3, "/Icon/home.png");
+        establecColor( panelbook3, panelbook3, labelbook3, "/Icon/books.png");
+        establecColor(paneldetail3, paneldetail3, labeldetail3, "/Icon/detail.png");
     }
 
     public void AnimateDetail3(){
-        mostrarColor(paneldetail, paneldetail, labeldetail, "/Icon/detailo.png");
-        establecColor(panelhome, panelhome, labelhome, "/Icon/home.png");
-        establecColor( panelbook,  panelbook, labelbook, "/Icon/books.png");
-        establecColor(panelfood, panelfood, labelfood, "/Icon/comingsoon.png");
-        
+        mostrarColor(paneldetail3, paneldetail3, labeldetail3, "/Icon/detailo.png");
+        establecColor(panelhome3, panelhome3, labelhome3, "/Icon/home.png");
+        establecColor( panelbook3,  panelbook3, labelbook3, "/Icon/books.png");
+        establecColor(panelfood3, panelfood3, labelfood3, "/Icon/comingsoon.png");
     }
     
    
