@@ -536,18 +536,18 @@ public class BookingDetail extends javax.swing.JFrame {
 
         // Get data from the selected row
         DefaultTableModel model = (DefaultTableModel) bookingdata.getModel();
-        String username = model.getValueAt(selectedRow, 0).toString(); // Assuming Email is column 0
-        String movieTitle = model.getValueAt(selectedRow, 1).toString(); // Movie title
-        String bookingDate = model.getValueAt(selectedRow, 2).toString(); // Booking Date
-        String bookingTime = model.getValueAt(selectedRow, 3).toString(); // Booking Time
-        String standardTickets = model.getValueAt(selectedRow, 4).toString(); // Standard Tickets
-        String premiumTickets = model.getValueAt(selectedRow, 5).toString(); // Premium Tickets
-        String totalCost = model.getValueAt(selectedRow, 6).toString(); // Total Cost
+        String username = model.getValueAt(selectedRow, 0).toString(); 
+        String movieTitle = model.getValueAt(selectedRow, 1).toString(); 
+        String bookingDate = model.getValueAt(selectedRow, 2).toString();
+        String bookingTime = model.getValueAt(selectedRow, 3).toString();
+        String standardTickets = model.getValueAt(selectedRow, 4).toString(); 
+        String premiumTickets = model.getValueAt(selectedRow, 5).toString(); 
+        String totalCost = model.getValueAt(selectedRow, 6).toString(); 
 
         // Generate the bill in a text area
         
-        billtextarea.setText("******************************************************\n");
-        billtextarea.setText(billtextarea.getText() + "                   CINEMA BILL                         \n");
+        billtextarea.setText("*********************************************************\n");
+        billtextarea.setText(billtextarea.getText() + "                    WELCOME TO DKH CINEMA                         \n");
         billtextarea.setText(billtextarea.getText() + "******************************************************\n");
         billtextarea.setText(billtextarea.getText() + "Customer Email: " + username + "\n");
         billtextarea.setText(billtextarea.getText() + "Movie Title: " + movieTitle + "\n");
